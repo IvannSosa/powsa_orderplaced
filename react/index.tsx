@@ -71,7 +71,7 @@ const OrderPlaced: FC = () => {
         <div className={`${handles.orderPlacedWrapper} pt9 sans-serif`}>
           <Analytics eventList={orderGroup.analyticsData} />
 
-          <ExtensionPoint id="op-header" />
+          <ExtensionPoint id="powsa-op-header" />
 
           <div
             role="main"
@@ -88,7 +88,7 @@ const OrderPlaced: FC = () => {
             )}
           </div>
 
-          <ExtensionPoint id="op-footer" />
+          <ExtensionPoint id="powsa-op-footer" />
         </div>
       </CurrencyContext.Provider>
     </OrderGroupContext.Provider>

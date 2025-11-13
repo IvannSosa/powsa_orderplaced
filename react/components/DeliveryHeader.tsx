@@ -48,7 +48,6 @@ const DeliveryHeader: FC<Props> = ({
             />
           )}
         </span>
-        <br />
         <small
           className={`${handles.packageShippingEstimate} c-muted-2 t-small`}
         >
@@ -57,14 +56,13 @@ const DeliveryHeader: FC<Props> = ({
             scheduled={shippingData.deliveryWindow}
           />
         </small>
-        <br />
         <small className={`${handles.packageSLA} c-muted-2 t-small`}>
-          {shippingData.selectedSla}
+          {shippingData?.selectedSla?.replace(/\s*\(.*?\)\s*/g, "")?.trim()}
         </small>
       </div>
 
       {giftRegistry &&
-      giftRegistry.addressId === shippingData.address.addressId ? (
+        giftRegistry.addressId === shippingData.address.addressId ? (
         <div className={`${handles.packageGiftDescription} c-muted-1`}>
           <span className={`${handles.packageAddressTitle} dn`}>
             <FormattedMessage id="store/shipping.header.address" />

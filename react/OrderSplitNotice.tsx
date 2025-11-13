@@ -15,7 +15,6 @@ const WrappedOrderSplitNotice = () => {
   if (order.deliveryParcels.length < 2) {
     return null
   }
-
   return (
     <div className={`${handles.splitNotice} mb5`}>
       <OrderSplitNotice

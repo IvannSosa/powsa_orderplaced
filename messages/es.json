@@ -44,7 +44,7 @@
   "store/pickup.header.title": "Recogida",
   "store/products.isGift": "Gratis",
   "store/products.quantity": "{quantity, plural, one {# unidad} other {# unidades}}",
-  "store/shipping.header.title": "Entrega",
+  "store/shipping.header.title": "Paquete",
   "store/shipping.header.address": "Dirección",
   "store/shipping.header.wishlist.address": "Dirección desde: {giftRegistryName}",
   "store/summary.items": "{itemsQuantity, plural, one {# articulo} other {# artículos}}",

@@ -1,25 +1,25 @@
 {
-  "order-placed": {
-    "blocks": ["op-header", "op-order"]
+  "powsa-order-placed": {
+    "blocks": ["powsa-op-header", "powsa-op-order"]
   },
-  "op-header": {
+  "powsa-op-header": {
     "children": [
-      "op-section#confirmation",
-      "op-section#notices",
-      "op-summary-section",
-      "op-bank-invoice-section"
+      "powsa-op-section#confirmation",
+      "powsa-op-section#notices",
+      "powsa-op-summary-section",
+      "powsa-op-bank-invoice-section"
     ]
   },
-  "op-section#confirmation": {
+  "powsa-op-section#confirmation": {
     "props": {
       "name": "confirmation",
       "marginBottom": 9,
       "borderless": true
     },
     "children": [
-      "op-confirmation-icon",
-      "op-confirmation-title",
-      "op-confirmation-message",
+      "powsa-op-confirmation-icon",
+      "powsa-op-confirmation-title",
+      "powsa-op-confirmation-message",
       "flex-layout.row#confirmation-buttons"
     ]
   },
@@ -35,27 +35,27 @@
     "children": ["flex-layout.col#confirmation-buttons"]
   },
   "flex-layout.col#confirmation-buttons": {
-    "children": ["op-print-button"]
+    "children": ["powsa-op-print-button"]
   },
-  "op-section#notices": {
+  "powsa-op-section#notices": {
     "props": {
       "name": "notices",
       "marginBottom": 9,
       "borderless": true
     },
-    "children": ["op-notices"]
+    "children": ["powsa-op-notices"]
   },
   // each order section
-  "op-order": {
+  "powsa-op-order": {
     "children": [
       "flex-layout.row#order-header",
-      "op-order-split-notice",
-      "op-order-customer",
-      "op-section#payments",
-      "op-section#pickup-packages",
-      "op-section#delivery-packages",
-      "op-order-takeaway-packages",
-      "op-order-total"
+      "powsa-op-order-split-notice",
+      "powsa-op-order-customer",
+      "powsa-op-section#payments",
+      "powsa-op-section#pickup-packages",
+      "powsa-op-section#delivery-packages",
+      "powsa-op-order-takeaway-packages",
+      "powsa-op-order-total"
     ]
   },
   // each order header
@@ -72,44 +72,44 @@
     ]
   },
   "flex-layout.col#order-header-info": {
-    "children": ["op-order-number", "op-order-datetime", "op-order-seller"]
+    "children": ["powsa-op-order-number", "powsa-op-order-datetime", "powsa-op-order-seller"]
   },
   "flex-layout.col#order-header-options": {
     "children": ["responsive-layout.desktop#order-options-desktop"]
   },
   "responsive-layout.desktop#order-options-desktop": {
-    "children": ["op-order-options"]
+    "children": ["powsa-op-order-options"]
   },
   // payment section
-  "op-section#payments": {
+  "powsa-op-section#payments": {
     "props": {
       "name": "paymentMethods"
     },
     "children": [
-      "op-order-payment",
+      "powsa-op-order-payment",
       "responsive-layout.mobile#order-options-mobile"
     ]
   },
   // bottom of top section of order header
   "responsive-layout.mobile#order-options-mobile": {
-    "children": ["op-order-options#mobile"]
+    "children": ["powsa-op-order-options#mobile"]
   },
-  "op-order-options#mobile": {
+  "powsa-op-order-options#mobile": {
     "props": {
       "blockClass": "mobile",
       "fullWidth": true
     }
   },
-  "op-section#pickup-packages": {
+  "powsa-op-section#pickup-packages": {
     "props": {
       "name": "pickupPackages"
     },
-    "children": ["op-order-pickup-packages"]
+    "children": ["powsa-op-order-pickup-packages"]
   },
-  "op-section#delivery-packages": {
+  "powsa-op-section#delivery-packages": {
     "props": {
       "name": "deliveryPackages"
     },
-    "children": ["op-order-delivery-packages"]
+    "children": ["powsa-op-order-delivery-packages"]
   }
 }
